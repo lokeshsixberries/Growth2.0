@@ -11,9 +11,6 @@ const createPost = async (req, res, next) => {
   }
 };
 
-// Get all posts
-console.log("🚀 ~ posts:", posts)
-
 const getAllPosts = async (req, res, next) => {
   try {
     const posts = await Post.find();
